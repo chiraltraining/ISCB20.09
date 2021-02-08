@@ -24,6 +24,45 @@ classoption: 'aspectratio=169'
 knitr::opts_chunk$set(echo = TRUE, comment=NA)
 ```
 
+## What is ggplot2?{.t}
+- ggplot2 is a data visualization package for the statistical programming language R.
+- Created by Hadley Wickham in 2005, ggplot2 is an implementation of Leland Wilkinson’s Grammar of Graphics—a general scheme for data visualization which breaks up graphs into semantic components such as scales and layers.
+
+## Types of Visualization{.t}
+In statistics, we generally have two kinds of visualization:
+
+- Exploratory data visualization: Exploring the data visually to find patterns among the data entities.
+- Explanatory data visualization: Showcasing the identified patterns using simple graphs.
+
+## Why Visualization?{.t}
+“A picture is worth a thousand words”
+
+- Data visualizations make big and small data easier for the human brain to understand, and visualization also makes it easier to detect patterns, trends, and outliers in groups of data.
+- Good data visualizations should place meaning into complicated datasets so that their message is clear and concise.
+
+## Grammar of Graphics{.t}
+- Data - The dataset being plotted
+- Aesthetics- The scales onto which we plot our data
+- Geometry - The visual elements used for our data
+- Facet	-Groups by which we divide the data
+
+## Data Import{.t}
+- readr - https://readr.tidyverse.org/
+- readxl- https://readxl.tidyverse.org/
+- haven - https://haven.tidyverse.org/
+
+## Data Manipulation{.t} 
+- tidyr- https://tidyr.tidyverse.org/
+- dplyr- https://dplyr.tidyverse.org/
+
+
+
+
+
+
+
+
+
 ## Data Sources{.t}
 - https://genome.ucsc.edu/
 - https://www.ensembl.org/index.html
