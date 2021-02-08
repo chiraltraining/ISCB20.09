@@ -1,0 +1,139 @@
+---
+title: "Introduction to Scientific Computing for Biologists"
+subtitle: 'ISCB20.09 - Introduction to R'
+author: | 
+  | Md. Jubayer Hossain
+  | https://jhossain.me/
+  | jubayer@hdrobd.org 
+institute: | 
+  | Founder 
+  | Health Data Research Organization
+  | Lead Organizer
+  | Scientific Computing for Biologists 
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output: 
+  beamer_presentation:
+    highlight: espresso
+    fonttheme: 'structurebold'
+classoption: 'aspectratio=169'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment=NA)
+```
+# Section-5: Operators
+
+## Operators in R{.t}
+- R has many operators to carry out different mathematical and logical operations.
+- Operators in R can mainly be classified into the following categories. 
+  1. Arithmetic Operators 
+  2. Relational Operators
+  3. Logical Operators 
+  4. Assignment Operators 
+
+## Arithmetic Operators{.t}
+These operators are used to carry out mathematical operations like addition and multiplication. The arithmetic operators are addition(+), subtraction(-), multiplication(*), division(/),  exponent(^), modulus(%%) and integer division(%/%). 
+
+|Operators | Description|
+|----------|:-----------|
+|+|Addition|
+|-|Subtraction|
+|*|Multiplication| 
+|/|Division | 
+|%%|Modulus |
+|%/%|Integer Division |
+
+
+
+```{r}
+x <- 10 
+y <- 2 
+```
+
+
+```{r}
+# Addition
+x+y
+# Subtraction
+2-5
+```
+
+
+## Arithmetic Operators(Cont...){.t}
+```{r}
+# Multiplication
+2 * 5 
+
+# Division
+2 / 5 
+
+# Exponent 
+2 ^ 5
+```
+
+## Arithmetic Operators(Cont...){.t}
+
+```{r}
+# Modulus(Remainder from division)
+2 %% 5
+
+# Integer Division 
+2 %/% 5
+```
+
+## Bolean Operators{.t}
+```{r}
+x <- TRUE 
+y <- TRUE 
+a <- T 
+b <- T 
+```
+
+
+
+## Relational Operators{.t}
+```{r}
+x <- 10
+y <- 5 
+# Equality 
+x == y 
+
+# Inequality
+x != y 
+
+# Less Than 
+x < y 
+```
+
+## Logical Operators{.t}
+```{r}
+# Logical NOT(!)
+! TRUE
+! FALSE   
+```
+## Logical Operators(Cont...){.t}
+```{r}
+# Logical AND(&&)
+TRUE && TRUE
+TRUE && FALSE 
+FALSE && FALSE 
+```
+
+## Logical Operators(Cont...){.t}
+```{r}
+# Logical OR(|)
+TRUE | TRUE 
+TRUE | FALSE 
+FALSE | FALSE    
+```
+
+
+## Relational Operators(Cont...){.t}
+```{r}
+# Greater Than 
+x > y 
+# Less or Equal 
+x <= y 
+# Greater or Equal
+x >= y 
+```

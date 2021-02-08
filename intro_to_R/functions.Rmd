@@ -1,0 +1,35 @@
+---
+title: "Introduction to Scientific Computing for Biologists"
+subtitle: 'ISCB20.09 - Introduction to R'
+author: | 
+  | Md. Jubayer Hossain
+  | https://jhossain.me/
+  | jubayer@hdrobd.org 
+institute: | 
+  | Founder 
+  | Health Data Research Organization
+  | Lead Organizer
+  | Scientific Computing for Biologists 
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output: 
+  beamer_presentation:
+    highlight: espresso
+    fonttheme: 'structurebold'
+classoption: 'aspectratio=169'
+---
+
+## Creating Functions in R{.t}
+```r
+f <- function() {
+  # empty function
+}
+```
+Functions have their own class 
+```{r}
+f <- function() {
+  # empty function
+}
+class(f) 
+```
+
+

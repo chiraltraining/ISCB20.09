@@ -1,0 +1,101 @@
+---
+title: "Introduction to Scientific Computing for Biologists"
+subtitle: 'ISCB20.09 - Introduction to R'
+author: | 
+  | Md. Jubayer Hossain
+  | https://jhossain.me/
+  | jubayer@hdrobd.org 
+institute: | 
+  | Founder 
+  | Health Data Research Organization
+  | Lead Organizer
+  | Scientific Computing for Biologists 
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output: 
+  beamer_presentation:
+    highlight: espresso
+    fonttheme: 'structurebold'
+classoption: 'aspectratio=169'
+---
+
+
+# Section-3: Variables and Reserved Keywords
+
+## Variables(Identifiers) in R{.t}
+- Variables are used to **store data**, whose value can be changed according to our need. \pause 
+- A variable is a name given to a memory location, which is used to store values in a computer program. \pause 
+- Variables in R programming can be used to store numbers (real and complex), words, matrices, and even tables. \pause 
+- R is a dynamically programmed language which means that unlike other programming languages, we do not have to declare the data type of a variable before we can use it in our program. \pause 
+- Unique name given to variable (function and objects as well) is **identifier**.
+
+
+## Rules for writing Identifiers in R{.t}
+- Identifiers can be a combination of letters, digits, period (.) and underscore (_). \pause 
+- It must start with a letter or a period. If it starts with a period, it cannot be followed by a digit.\pause 
+- It should not start with a number (e.g:- 2x) \pause 
+- It should not start with a dot followed by a number (e.g:- .2x) \pause 
+- It should not start with an underscore (e.g:- _x) \pause 
+- Reserved words in R cannot be used as identifiers(e.g: TRUE, FALSE) \pause 
+
+Basically, there are 5 naming conventions 
+
+- alllowercase: e.g. `myname`
+- period.separated: e.g. `new.name`
+- underscore_separated: e.g. `my_name`
+- lowerCamelCase: e.g. `myName`
+- UpperCamelCase: e.g. `MyName`
+
+## Creating Variables{.t}
+Using equal(`=`) operator
+```{r echo=TRUE}
+x = 10 
+```
+Using leftward(`<-`) operator 
+```{r echo=TRUE}
+y <- 15  
+```
+
+Using rightward(`->`) operator 
+```{r echo=TRUE}
+z <- 20 
+```
+
+## Reserved Keaywords in R{.t}
+- Don’t use any reserved keyword as variable name. List all of reserved words in R by using (?Reserved). 
+- The reserved words in R’s parser are - if else repeat while function for in next break - TRUE FALSE NULL Inf NaN NA NA_integer_ NA_real_ NA_complex_ NA_character_
+
+
+## Entering Input{.t}
+At the R prompt/console we type expressions. 
+```{r echo=TRUE}
+num <- 10
+```
+The `<-` symbol is the **assignment** operator. \
+The grammar of the language determines whether an expression is complete or not.
+
+## Evaluation{.t}
+When a complete expression is entered at the R console, it is evaluated and the result of evaluated expression is returned. The result may be auto-printed. 
+```{r}
+x <- 10
+x
+```
+
+```{r}
+x <- 10
+print(x)
+```
+
+```{r}
+x <- 10
+cat(x)
+```
+  
+## Comments in R{.t}
+The # character indicates a comment. 
+```{r}
+x <- 10 # This is a comment
+```
+Anything to the right of the # (inlcuding the # itself) is ignored. \
+This is only comment character in R. \
+R does not support multi-line comments or comment block.
+

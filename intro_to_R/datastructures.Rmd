@@ -1,0 +1,57 @@
+---
+title: "Introduction to Scientific Computing for Biologists"
+subtitle: 'ISCB20.09 - Introduction to R'
+author: | 
+  | Md. Jubayer Hossain
+  | https://jhossain.me/
+  | jubayer@hdrobd.org 
+institute: | 
+  | Founder 
+  | Health Data Research Organization
+  | Lead Organizer
+  | Scientific Computing for Biologists 
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output: 
+  beamer_presentation:
+    highlight: espresso
+    fonttheme: 'structurebold'
+classoption: 'aspectratio=169'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment=NA)
+```
+
+## Vector{.t}
+- Vector is a basic data structure in R. 
+- It contains element of the same type. 
+- The data types can be logical, integer, double, character, and complex. 
+- A vector's type can be checked with the `typeof()` function. 
+
+
+## Matrix{.t} 
+- Matrix is a two dimensional data structure in R programming. 
+- Matrix is similar to **vector** but additionally contains the dimension attributes. 
+- All attributes of an object can be checked by `attributes()` function. 
+- Dimention can be checked by directly with the `dim()` function. 
+
+## List{.t}
+- List is a data structure having components of mixed data types. 
+- A `vector` having all elements of the same type is called atomic vector but a vector having elements of different type is called list. 
+- We can check if it's a list with `typeof()` function and find its length using `length()` function.
+
+## Factor{.t}
+- Factor is a data structure use for fields that takes only predefined, finite number of values(categorical values)
+
+
+## Data Frame{.t}
+-  Data frame is a two dimensional data structure in R. 
+- It is a special case of a `list` which has each component of equal length. 
+- Each component from the column and contents of the component from rows. 
+
+
+
+
+
+
+

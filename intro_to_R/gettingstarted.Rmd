@@ -1,0 +1,35 @@
+---
+title: "Introduction to Scientific Computing for Biologists"
+subtitle: 'ISCB20.09 - Introduction to R'
+author: | 
+  | Md. Jubayer Hossain
+  | https://jhossain.me/
+  | jubayer@hdrobd.org 
+institute: | 
+  | Founder 
+  | Health Data Research Organization
+  | Lead Organizer
+  | Scientific Computing for Biologists 
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output: 
+  beamer_presentation:
+    highlight: espresso
+    fonttheme: 'structurebold'
+classoption: 'aspectratio=169'
+---
+# Section-2: Getting Started
+## Installing R {.t}
+- Installing R on Windows -
+https://cran.r-project.org/bin/windows/base/
+- Installing R on Linux -
+https://cran.r-project.org/bin/linux/ubuntu/README.html
+- Installing R on Mac - 
+https://cran.r-project.org/bin/macosx/
+
+## Installing RStudio{.t}
+- RStudio is an Integrated Development Environment(IDE) available for R that is built by RStudio. 
+- Download and Install
+https://rstudio.com/products/rstudio/download/#download
+
+## The RStudio Interface{.t}
+![rstudio](../img/rstudio.png)

@@ -1,0 +1,32 @@
+---
+title: "Introduction to Scientific Computing for Biologists"
+subtitle: |
+  | ISCB20.09 - Introduction to Data Visualization with R
+  | An Introduction to ggplot2
+author: | 
+  | Md. Jubayer Hossain
+  | https://jhossain.me/
+  | jubayer@hdrobd.org 
+institute: | 
+  | Founder 
+  | Health Data Research Organization
+  | Lead Organizer
+  | Scientific Computing for Biologists 
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output: 
+  beamer_presentation:
+    highlight: espresso
+    fonttheme: 'structurebold'
+classoption: 'aspectratio=169'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment=NA)
+```
+
+## Data Sources{.t}
+- https://genome.ucsc.edu/
+- https://www.ensembl.org/index.html
+- https://www.encodeproject.org/
+
+

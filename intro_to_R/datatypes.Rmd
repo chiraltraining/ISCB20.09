@@ -1,0 +1,82 @@
+---
+title: "Introduction to Scientific Computing for Biologists"
+subtitle: 'ISCB20.09 - Introduction to R'
+author: | 
+  | Md. Jubayer Hossain
+  | https://jhossain.me/
+  | jubayer@hdrobd.org 
+institute: | 
+  | Founder 
+  | Health Data Research Organization
+  | Lead Organizer
+  | Scientific Computing for Biologists 
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output: 
+  beamer_presentation:
+    highlight: espresso
+    fonttheme: 'structurebold'
+classoption: 'aspectratio=169'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment=NA)
+```
+
+# Section-4: Data Types in R 
+## Data Types in R{.t}
+R has five basic data types 
+
+- character(e.g: 'abul', "abul")
+- numeric(e.g: 2, 3)
+- integer(e.g: 5L)
+- complex(e.g: 5i)
+- logical(True/False)
+
+## Numbers{.t}
+* Numbers in R generally treated as numeric objects(i.e. double precision real numbers)
+* If you explicitly want an integer, you need to specify the `L` suffix.
+* There is also a special number `Inf` which is represents infinity; e.g. `1 / 0`
+* `Inf` can be used in ordinary calculations; e.g. `1/Inf` is `0`
+* The value `NaN` represents an undefined value("not a number"); e.g. `0/0` 
+* `NaN` can also be thought of as a missing value. 
+
+The numeric constants are 
+
+- integer(`L`)
+- double
+- complex(`i`) 
+
+## Decimal vs Double vs Float{.t}
+The Decimal, Double, and Float variable types are different in the way that they store the values. Precision is the main difference where float is a single precision (32 bit) floating point data type, double is a double precision (64 bit) floating point data type and decimal is a 128-bit floating point data type.
+
+* Float - 32 bit (7 digits)
+* Double - 64 bit (15-16 digits)
+* Decimal - 128 bit (28-29 significant digits)
+
+## Characters{.t}
+Character constants can be represented using either single quotes ('') or double quotes ("") as delimiters.
+
+## Atributes{.t} 
+R objects can have attributes 
+
+* names, dimnames 
+* dimensions(e.g. matrices, arrays)
+* class 
+* length 
+* other user-defined attributes/metadata
+
+Attributes of an object can be accessed using the `attributes()` function.
+
+## Built-in Constants in R{.t}
+
+```{r}
+pi # value of pi 
+LETTERS
+```
+
+```{r}
+month.name 
+```
+
+
+

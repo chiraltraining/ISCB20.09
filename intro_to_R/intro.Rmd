@@ -1,0 +1,118 @@
+---
+title: "Introduction to Scientific Computing for Biologists"
+subtitle: 'ISCB20.09 - Introduction to R'
+author: | 
+  | Md. Jubayer Hossain
+  | https://jhossain.me/
+  | jubayer@hdrobd.org 
+institute: | 
+  | Founder 
+  | Health Data Research Organization
+  | Lead Organizer
+  | Scientific Computing for Biologists 
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output: 
+  beamer_presentation:
+    highlight: espresso
+    fonttheme: 'structurebold'
+classoption: 'aspectratio=169'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment=NA)
+```
+
+
+
+# Section-1: Introduction to R 
+
+## What is R{.t}
+- R is a dialect of S(R is an implementation of the S programming language). \pause 
+- R was created by Ross Ihaka and Robert Gentleman at the University of Auckland, New
+Zealand, and is developed by the R Development Core Team. \pause 
+- R is a programming language and environment commonly used in statistical computing, data analytics and scientific research. \pause
+- R is a programming language and free software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing. \pause
+- The R language is widely used among statisticians and data miners for developing statistical software and data analysis.
+
+## Why R?{.t}
+- R is open source and free! \pause 
+  - R is free to download as it is licensed under the terms of the GNU General Public License.
+  - You can look at the source to see what’s happening under the hood.
+  - There’s more, most R packages are available under the same license so you can use them, even in     commercial applications without having to call your lawyer. 
+
+- R is popular – and increasing in popularity. \pause 
+- R runs on all platforms.(Windows, Linux and Mac) \pause 
+- R is being used by the biggest tech giants(google, facebook, microsoft, twitter)
+
+## Applications of R{.t}
+- Data Science
+- Data Analysis
+- Genomic Data Science
+- Biological Data Analysis
+- Mutational Signature Analysis
+- Genomic Analysis
+- Statistical Computing
+- Machine Learning
+
+
+## R Packages for Data Analysis/Data Science{.t}
+- `dplyr`
+  - dplyr is a grammar of data manipulation, providing a consistent set of verbs that help you solve  the most common data manipulation challenges
+  - Documentation- https://dplyr.tidyverse.org/
+- `ggplot2`
+  - for static data visualization
+  - https://ggplot2.tidyverse.org/
+- Plotly 
+  - for interactive data visualization
+  - https://plotly.com/r/
+- tidyverse
+  - combination of `dplyr`, `ggplot2` 
+  - https://www.tidyverse.org/ 
+  
+
+## R Packages for Bioinformatics/Genomic Data Science{.t}
+- Bioconductor
+  - for genomic data analysis
+  - https://www.bioconductor.org/
+- seqinr
+  - DNA or Protein sequence analysis 
+  - https://cran.r-project.org/web/packages/seqinr/index.html 
+- MutatioanlPattern
+  - mutational signature analysis 
+  - https://bioconductor.org/packages/release/bioc/html/MutationalPatterns.html 
+  
+  
+## Resources: Books {.t}
+* [R for Data Science by Roger D.Peng ](https://bookdown.org/rdpeng/rprogdatascience/)
+* [Introduction to Data Science by Rafael Irizarry](https://rafalab.github.io/dsbook/)
+* [Data Analysis for the Life Sciences by Rafael Irizarry](https://rafalab.github.io/pagesharvardx.html)
+* [Statistics using R](#)
+* [R for Biologists](R for Biologists)
+* [R for Public Health](http://rforpublichealth.blogspot.com/)
+* [Rmarkdown](https://rmarkdown.rstudio.com/) 
+
+## Resources: Blogs{.t}
+- https://www.datamentor.io/r-programming/
+- https://online.stat.psu.edu/stat484/
+- https://online.stat.psu.edu/stat485/
+- https://www.statmethods.net/index.html
+- https://simplystatistics.org/
+- https://www.tutorialspoint.com/r/index.htm
+- https://www.rforbiologists.org/
+- https://compgenomr.github.io/book/
+- https://statsandr.com/
+- https://rafalab.github.io/pages/harvardx.html
+- https://bolt.mph.ufl.edu/software/r-phc-6055/
+
+
+## Alternatives to R Programming{.t}
+- Python 
+  - Python is a very powerful high-level, object-oriented programming language with an easy-to-use and simple syntax.
+  - Python is extremely popular among data scientists and researchers. Most of the packages in R have equivalent libraries in Python as well.
+  
+- SAS (Statistical Analysis System)
+  - SAS is a powerful software that has been the first choice of private enterprise for their analytics needs for a long time.
+
+- SPSS – Software Package for Statistical Analysis
+  - SPSS is another popular statistical tool. It is used most commonly in the social sciences and is considered the easiest to learn among enterprise statistical tools.
+
