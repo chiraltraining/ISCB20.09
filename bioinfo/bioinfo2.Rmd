@@ -1,0 +1,15 @@
+
+## Patterns Finding{.t}
+- Gene start
+- Protein end
+- Regions that enhance or silence gene expression
+- Conserved regions between organisms
+- Genetic variation
+
+## Pattern Matching{.t}
+- `matchPattern(pattern, subject)`
+  - 1 string to 1 string
+- `vmatchPattern(pattern, subject)`
+  - 1 set of strings to 1 string
+  - 1 string to a set of strings
+- `findPalindromes()` - Find palindromic regions in a single sequence

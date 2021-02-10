@@ -1,0 +1,60 @@
+---
+title: "Introduction to Scientific Computing for Biologists"
+subtitle: |
+  | ISCB20.09 - Interpreting Data with Inferential Statistics     using R 
+author: | 
+  | Md. Jubayer Hossain
+  | https://jhossain.me/
+  | jubayer@hdrobd.org 
+institute: | 
+  | Founder 
+  | Health Data Research Organization
+  | Lead Organizer
+  | Scientific Computing for Biologists 
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output: 
+  beamer_presentation:
+    highlight: espresso
+    fonttheme: 'structurebold'
+classoption: 'aspectratio=169'
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment=NA)
+```
+
+
+## Normality Tests{.t}
+- Shapiro-Wilk Test
+- D’Agostino’s K^2 Test
+- Anderson-Darling Test
+
+## Correlation Tests{.t}
+- Pearson’s Correlation Coefficient
+- Spearman’s Rank Correlation
+- Kendall’s Rank Correlation
+- Chi-Squared Test
+
+## Parametric Statistical Hypothesis Tests{.t}
+- Student’s t-test
+- Paired Student’s t-test
+- Analysis of Variance Test (ANOVA)
+- Repeated Measures ANOVA Test
+
+## Nonparametric Statistical Hypothesis Tests{.t}
+- Mann-Whitney U Test
+- Wilcoxon Signed-Rank Test
+- Kruskal-Wallis H Test
+- Friedman Test
+
+
+
+
+
+
+
+
+
+
+
+
+
