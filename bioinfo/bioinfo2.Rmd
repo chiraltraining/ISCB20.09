@@ -1,4 +1,96 @@
+---
+title: "Introduction to Scientific Computing for Biologists"
+subtitle: |
+  | ISCB20.09 - R for Bioinformatics
+  | An Introduction to `seqinr` and `Biconductor`
+author: | 
+  | Md. Jubayer Hossain
+  | https://jhossain.me/
+  | jubayer@hdrobd.org 
+institute: | 
+  | Founder 
+  | Health Data Research Organization
+  | Lead Organizer
+  | Scientific Computing for Biologists 
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output: 
+  beamer_presentation:
+    highlight: espresso
+    fonttheme: 'structurebold'
+classoption: 'aspectratio=169'
+---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment=NA)
+```
+
+## IRanges{.t}
+```{r}
+# Load IRanges 
+library(IRanges)
+# IRanges with numeric arguments. 
+ir <- IRanges(start = 20, end = 30)
+ir 
+```
+
+## IRanges{.t}
+A range is de ned by start and end.
+```{r}
+# IRanges with numeric arguments. 
+ir1 <- IRanges(start = 20, end = 30)
+ir1 
+```
+
+## IRanges{.t}
+```{r}
+# IRanges with numeric arguments. 
+ir2 <- IRanges(start = c(1, 3, 5), end = c(7, 9, 11))
+ir2 
+```
+**Equation: width = end - start + 1**
+
+## IRanges{.t}
+```{r}
+# IRanges with logical vector  
+ir3 <- IRanges(start = c(TRUE, FALSE, T, F))
+ir3 
+```
+
+## Rle - run length encoding{.t}
+- Rle stands for Run length encoding
+- Computes and stores the lengths and values of a vector or factor.
+- Rle is general S4 container used to save long repetitive vectors e ciently. 
+```{r}
+num <- c(3, 2, 1, 5, 6, 7, 8)
+Rle(num)
+```
+
+## GRanges{.t}
+- A GRanges is a data structure for storing genomic intervals. 
+- They are fast and efficient. 
+
+```{r}
+# Load GenomicRanges
+library(GenomicRanges)
+```
+
+## GRanges{.t}
+```{r}
+# Create GRanges object 
+gr1 <- GRanges("chr1:200-300")
+gr1
+```
+- GRanges class is a container to save genomic intervals by chromosome. 
+- Minimum arguments `chr1:200-300`
+- GRanges `seqnames` and `seqinfo`.
+
+## GRanges{.t}
+```{r}
+gr2 <- GRanges(seqnames = "chr1", 
+               strand = c("+", "-", "+"),
+        ranges = IRanges(start = c(1, 3, 5), width = 3))
+gr2 
+```
 ## Patterns Finding{.t}
 - Gene start
 - Protein end
@@ -13,3 +105,29 @@
   - 1 set of strings to 1 string
   - 1 string to a set of strings
 - `findPalindromes()` - Find palindromic regions in a single sequence
+
+
+## Introduction to ShortRead{.t}
+ShortRead: a Bioconductor package for input, quality assessment and exploration of high-throughput sequence data. 
+
+## Sequence Data Handling with `ShortRead` {.t}
+- Reading and Writing `FASTA` File 
+- Reading and Writing `FASTQ` File 
+- `FASTQ` Sampling
+
+## Quality Control(QC) with `ShortRead` {.t}
+- Quality scores - Phred table
+- Encoding - Phred +33
+- `fastq` quality
+- Quality Assessment
+
+## Match and Filter{.t}
+- Duplicate sequences
+  - Biological sequence duplicates occur in nature.
+  - Amplification from the steps in library preparation (PCR)
+  - Sequencing the sample more than once
+  
+- Remove Duplicates 
+  - Whole genome sequencing or exome sequencing
+  - Mark duplicates using a threshold. 
+  - RNA-seq and ChIP-seq
